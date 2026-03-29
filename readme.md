@@ -88,7 +88,3 @@ If you find this code or our paper useful in your research, please consider citi
   year={2025},
   url={https://aclanthology.org/2025.acl-long.831.pdf}
 }
-```
-`utils.py`，然后在 README 里简单提一句 "Statistical tools available in `utils.py`"。
-
-你觉得这份 README 还有没有什么需要补充或者微调的地方？
