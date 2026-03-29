@@ -5,7 +5,7 @@
 
 This repository provides the official minimal, method-faithful implementation for the ACL 2025 paper: **[Analyzing the Rapid Generalization of SFT via the Perspective of Attention](https://aclanthology.org/2025.acl-long.831.pdf)**.
 
-It contains a standalone analytical probe (`evaluate_ap_gsm8k.py`) designed to extract and calculate the **Activation Patterns (AP)** of attention heads for a given Large Language Model (LLM) checkpoint evaluated on the GSM8K dataset.
+It contains a standalone analytical probe (`compute_ap.py`) designed to extract and calculate the **Activation Patterns (AP)** of attention heads for a given Large Language Model (LLM) checkpoint evaluated on the GSM8K dataset.
 
 ## 📌 Scope & Disclaimer
 
@@ -52,7 +52,7 @@ attn_output = torch.matmul(attn_weights, value_states)
 # ... existing code ...
 ```
 
-*(Note: The script `evaluate_ap_gsm8k.py` includes a strict runtime check. It will safely fail with a `RuntimeError` on the very first step if this patch is missing or incomplete, preventing you from wasting hours generating empty matrices.)*
+*(Note: The script `compute_ap.py` includes a strict runtime check. It will safely fail with a `RuntimeError` on the very first step if this patch is missing or incomplete, preventing you from wasting hours generating empty matrices.)*
 
 ## 🚀 Usage
 
